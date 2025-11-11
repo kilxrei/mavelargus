@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>about myself</title>
+<style>
+  body {
+    margin: 0;
+    font-family: "Comic Sans MS", sans-serif;
+    background: linear-gradient(to bottom, #c8f7dc, #b3e6f5);
+    color: #2e4e3d;
+  }
+
+  .container {
+    width: 80%;
+    max-width: 950px;
+    margin: 30px auto;
+    background: #f0fff8;
+    border-radius: 15px;
+    border: 3px solid #9ad6be;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    padding-bottom: 20px;
+  }
+
+  header {
+    background: linear-gradient(to right, #9ad6be, #b3e6f5);
+    border-radius: 12px 12px 0 0;
+    padding: 15px;
+    text-align: center;
+    color: #2e4e3d;
+  }
+
+  header h1 {
+    margin: 0;
+    font-size: 2.2em;
+  }
+
+  nav {
+    display: flex;
+    justify-content: center;
+    background-color: #b3e6f5;
+    padding: 10px;
+    border-bottom: 3px solid #9ad6be;
+  }
+
+  nav button {
+    background: #9ad6be;
+    border: none;
+    border-radius: 20px;
+    margin: 0 10px;
+    padding: 10px 20px;
+    font-size: 1em;
+    color: #2e4e3d;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+
+  nav button:hover {
+    background: #7cc8a3;
+    color: white;
+  }
+
+  section {
+    padding: 20px;
+  }
+
+  .profile-pic {
+    display: block;
+    margin: 0 auto 15px;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 4px solid #9ad6be;
+    background-color: #d9f8e8;
+  }
+
+  .buttons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 10px;
+  }
+
+  .buttons a {
+    text-decoration: none;
+    color: white;
+    background-color: #9ad6be;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+
+  .buttons a:hover {
+    background-color: #7cc8a3;
+  }
+
+  .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .gallery img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 15px;
+    border: 3px solid #9ad6be;
+  }
+
+  .friends-list {
+    text-align: center;
+    margin-top: 15px;
+  }
+
+  .friends-list a {
+    display: inline-block;
+    margin: 5px 10px;
+    text-decoration: none;
+    color: #2e4e3d;
+    font-weight: bold;
+    background-color: #c8f7dc;
+    padding: 8px 15px;
+    border-radius: 15px;
+    transition: 0.3s;
+  }
+
+  .friends-list a:hover {
+    background-color: #9ad6be;
+    color: white;
+  }
+
+  footer {
+    text-align: center;
+    background: #b3e6f5;
+    padding: 10px;
+    border-radius: 0 0 12px 12px;
+    font-size: 0.9em;
+    color: #2e4e3d;
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+  <header>
+    <h1>♡ Hi! I'm Mavel♡</h1>
+    <p>Welcome to my cozy space on the web!</p>
+  </header>
+
+  <nav>
+    <button onclick="showSection('about')">About</button>
+    <button onclick="showSection('gallery')">Gallery</button>
+    <button onclick="showSection('friends')">Friends</button>
+  </nav>
+
+  <section id="about">
+    <img src="https://i.imgur.com/E6Zb9IT.png" alt="Profile Picture" class="profile-pic">
+    <h2 style="text-align:center;">About Me 💚</h2>
+    <p style="text-align:center; max-width: 700px; margin: 0 auto;">
+      Hi! I’m <strong>Mavel</strong>, a 21-year-old artist who loves to draw and explore creative ideas.
+      I enjoy turning my imagination into colorful illustrations that bring joy and emotion. 
+      When I’m not sketching, I love listening to music, enjoying nature, or learning new art techniques. 
+      This little website is my personal space to share my artworks and connect with friends!
+    </p>
+
+    <div class="buttons">
+      <a href="https://facebook.com/" target="_blank">Facebook</a>
+      <a href="https://instagram.com/" target="_blank">Instagram</a>
+    </div>
+  </section>
+
+  <section id="gallery" style="display:none;">
+    <h2 style="text-align:center;">My Artworks 🎨</h2>
+    <div class="gallery">
+      <img src="artwork1.png" alt="Artwork 1">
+      <img src="https://i.imgur.com/rV6e1wV.jpeg" alt="Artwork 2">
+      <img src="https://i.imgur.com/h7GgZgO.jpeg" alt="Artwork 3">
+      <img src="https://i.imgur.com/4nKyXpc.jpeg" alt="Artwork 4">
+    </div>
+  </section>
+
+  <section id="friends" style="display:none;">
+    <h2 style="text-align:center;">Friends 🌸</h2>
+    <p style="text-align:center;">Here are some of my amazing friends! Check out their sites below:</p>
+    <div class="friends-list">
+      <a href="https://friend1website.com" target="_blank">Mylen Villa</a>
+      <a href="https://friend2website.com" target="_blank">Laica Balogo</a>
+      <a href="https://friend3website.com" target="_blank">Jhonna Mae Santander</a>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Mavel Argus| Made with love 💙💚</p>
+  </footer>
+</div>
+
+<script>
+  function showSection(sectionId) {
+    document.querySelectorAll("section").forEach(sec => sec.style.display = "none");
+    document.getElementById(sectionId).style.display = "block";
+  }
+</script>
+
+</body>
+</html>
